@@ -19,87 +19,45 @@
     <link rel="stylesheet" href="./style.css">
     <title>Portofolio</title>   
   </head>
-  <body id = "app">
-      <!--Header-->
-    <div v-if="true" class="cover" style="background-image: url(Image/bgg.png);">
-      <div class="masking"></div>
-	  <small class="credit"><a href="">Background photo by Pinterest</a></small>
-      <div class="container h-100">
-        <div class="row h-100 align-items-center">
-          <div class="col-6 text-black">
-            <h1>{{header.title}}</h1>
-            <p>{{header.description}}</p>
-            <div class="social">
-              <a v-bind:href="header.social.ig.url"><i class="bi-instagram"></i> {{header.social.ig.title}}</a>
+  <body>
+      <div id="app">
+        <!--Header-->
+        <div v-if="true" class="cover" style="background-image: url(Image/bgg.png);">
+          <div class="masking"></div>
+        <small class="credit"><a href="">Background photo by Pinterest</a></small>
+          <div class="container h-100">
+            <div class="row h-100 align-items-center">
+              <div class="col-6 text-black">
+                <h1>{{header.title}}</h1>
+                <p>{{header.description}}</p>
+                
+              </div>
+              <div class="col-6 align-self-end text-center">
+                <img   v-bind:src="header.imageprofile">
+              </div>
             </div>
-          </div>
-          <div class="col-6 align-self-end text-center">
-            <img   v-bind:src="header.imageProfile">
+          </div>   
+        </div>
+        <!--end header-->
+        <!--Articles-->
+        <div class="container pt-3">        
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-lg-6 order-lg-2">
+                            <div class="p-5"><img class="img-fluid rounded-circle" v-bind:src="articles.thumbnail" alt="..." /></div>
+                        </div>
+                        <div class="col-lg-6 order-lg-1">
+                            <div class="p-5">
+                                <h2 class="display-4">{{articles.title}}</h2>
+                                <p>{{articles.description}}</p>
+                                <a href="#" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
           </div>
         </div>
-      </div>   
-    </div>
-    <!--end header-->
-    <!--Articles-->
-    <div class="container pt-3">
-      <div class="row">
-        
-		        <section id="scroll">
-            <div class="container px-5">
-                <div class="row gx-5 align-items-center">
-                    <div class="col-lg-6 order-lg-2">
-                        <div class="p-5"><img class="img-fluid rounded-circle" v-bind:src="articles.thumbnail" alt="..." /></div>
-                    </div>
-                    <div class="col-lg-6 order-lg-1">
-                        <div class="p-5">
-                            <h2 class="display-4">{{articles.title}}</h2>
-                            <p>{{articles.description}}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-		<section>
-            <div class="container px-5">
-                <div class="row gx-5 align-items-center">
-                    <div class="col-lg-6">
-                        <div class="p-5"><img class="img-fluid rounded-circle" v-bind:src="articles2.thumbnail" alt="..." /></div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="p-5">
-                            <h2 class="display-4">{{articles2.title}}</h2>
-                            <p>{{articles2.description}}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-		 <section>
-            <div class="container px-5">
-                <div class="row gx-5 align-items-center">
-                    <div class="col-lg-6 order-lg-2">
-                        <div class="p-5"><img class="img-fluid rounded-circle" v-bind:src="articles3.thumbnail" alt="..." /></div>
-                    </div>
-                    <div class="col-lg-6 order-lg-1">
-                        <div class="p-5">
-                            <h2 class="display-4">{{articles3.title}}</h2>
-                            <p> {{articles3.description}}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        
-
-      </div>
-
-    </div>
-
-    <!--end articles-->
-
+        <!--end articles--></div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -118,6 +76,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/vue@3"></script>
-    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./get_json.js"></script>
+
+  
   </body>
 </html>
