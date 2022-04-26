@@ -17,7 +17,7 @@ Vue.createApp({
             console.log(error);
           });
       },
-      getArticles() {
+      getArticlesData() {
         axios
           .get('https://raw.githubusercontent.com/hanisftryaa/coba/main/contents/articles.json')
           .then((res) => {
@@ -31,7 +31,7 @@ Vue.createApp({
     },
     beforeMount() {
       this.getHeaderData();
-      this.getArticles();
+      this.getArticlesData();
     },
   }).mount('#app');
   

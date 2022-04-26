@@ -41,14 +41,14 @@
         <!--end header-->
         <!--Articles-->
         <div class="container px-5">
-          <div class="row gx-5 align-items-center">
+          <div class="row gx-5 align-items-center" v-for="data in articles">
               <div class="col-lg-6">
-                  <div class="p-5"><img class="img-fluid rounded-circle" v-bind:src="articles.thumbnail" alt="..." /></div>
+                  <div class="p-5"><img class="img-fluid rounded-circle" v-bind:src="data.thumbnail" alt="..." /></div>
               </div>
               <div class="col-lg-6">
                   <div class="p-5">
-                      <h2 class="display-4">{{articles.title}}</h2>
-                      <p>{{articles.description}}</p>
+                      <h2 class="display-4">{{data.title}}</h2>
+                      <p>{{data.description}}</p>
                       <a href="#" class="btn btn-primary">Read More</a>
                   </div>
               </div>
