@@ -6,7 +6,7 @@ Membentuk manusia muslim yang beriman, bertaqwa, berakhlaq mulia, cakap percaya 
 Universitas Ahmad Dahlan memiliki sebelas fakultas, terdiri dari program sarjana, program magister, program profesi serta program vokasi. Setiap fakultas terdiri dari beberapa program studi yang spesifik mempelajari bidang ilmu masing-masing.
 Visi dan Misi Uneversitas Ahmad Dahlan yaitu :
 1.	Visi 
-Menjadi perguruan tinggi yang unggul dan inovatif, mengabdi kepada kepentingan bangsa dan umat manusia yang dijiwai nilai-nilai Islam.
+- Menjadi perguruan tinggi yang unggul dan inovatif, mengabdi kepada kepentingan bangsa dan umat manusia yang dijiwai nilai-nilai Islam.
 2.	Misi
 - 	mengimplementasikan nilai-nilai AIK pada semua aspek kegiatan
 -	memajukan ilmu pengetahuan, teknologi dan seni melalui pendidikan, penelitian, dan pengabdian kepada masyarakat
