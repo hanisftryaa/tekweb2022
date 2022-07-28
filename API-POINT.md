@@ -21,7 +21,7 @@ response:
 
 #### Menampilkan data user dengan `id` tertentu
 
-
+```python
 GET: /user/[id]
 
 reponse:
@@ -32,7 +32,7 @@ reponse:
         "title"         : "",
         "sampul"        : "",
 }
-
+```
 
 #### Menambahkan data pengguna
 
