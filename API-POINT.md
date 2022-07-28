@@ -2,7 +2,7 @@
 
 #### Menampilkan data user
 
-
+```Java
 GET: /user
 
 response:
@@ -16,6 +16,7 @@ response:
     },
     ...
 ]
+```
 
 
 #### Menampilkan data user dengan `id` tertentu
