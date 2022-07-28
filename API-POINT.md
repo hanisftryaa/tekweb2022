@@ -50,10 +50,10 @@ data:
 response:
 true    // if success
 false   // if failure
-
+```
 
 #### Edit data pengguna
-
+```java
 
 PUT: /user
 
@@ -69,23 +69,23 @@ data:
 response:
 true    // if success
 false   // if failure
-
+```
 
 
 #### Menghapus data anggota
-
+```java
 
 DELETE: /user/[id]
 
 response:
 true    // if success
 false   // if failure
-
+```
 
 ### Artikel
 
 #### Menampilkan data semua artikel
-
+```java
 
 GET: /article
 
@@ -102,10 +102,10 @@ response:
     }
     ....
 ]
-
+```
 
 #### Menampilkan data artikel dengan id  tertentu
-
+```java
 
 GET: /articles/[id]
 
@@ -119,10 +119,10 @@ response:
         "deskripsi      : "",
         "sampul"        : "",
 }
-
+```
 
 #### Menambahkan data artikel
-
+```java
 
 POST: /artikel
 
@@ -139,10 +139,10 @@ data:
 response:
 true    // if success
 false   // if failure
-
+```
 
 #### Mengedit data artikel
-
+```java
 
 PUT: /articles
 
@@ -160,23 +160,23 @@ data:
 response:
 true    // if success
 false   // if failure
-
+```
 
 #### Menghapus data artikel
-
+```java
 
 DELETE: /articles/[id]
 
 response:
 true    // if success
 false   // if failure
-
+```
 
 
 ### Buku Almat
 
 #### Menampilkan data semua Buku
-
+```java
 
 GET: /Buku
 
@@ -189,10 +189,10 @@ response:
         "sampul"        : "",
     }
 ]
-
+```
 
 #### Menampilkan data buku dengan id  tertentu
-
+```java
 
 GET: /buku/[id]
 
@@ -203,10 +203,10 @@ response:
         "des"           : "",
         "sampul"        : "",
 }
-
+```
 
 #### Menambahkan data buku
-
+```java
 
 POST: /buku
 
@@ -221,10 +221,10 @@ data:
 response:
 true    // if success
 false   // if failure
-
+```
 
 #### Mengedit data buku
-
+```java
 
 PUT: /buku
 
@@ -239,10 +239,10 @@ data:
 response:
 true    // if success
 false   // if failure
-
+```
 
 #### Menghapus data buku
-
+```java
 
 DELETE: /buku/[id]
 
