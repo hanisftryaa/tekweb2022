@@ -22,6 +22,7 @@ response:
 #### Menampilkan data user dengan `id` tertentu
 
 ```python
+
 GET: /user/[id]
 
 reponse:
@@ -33,9 +34,8 @@ reponse:
         "sampul"        : "",
 }
 ```
-
 #### Menambahkan data pengguna
-
+```python
 
 POST: /user
 
@@ -249,3 +249,9 @@ DELETE: /buku/[id]
 response:
 true    // if success
 false   // if failure
+```
+## Desain Database
+
+Desain database untuk menyediakan API Points adalah sebagai berikut:
+
+![Desain database API](https://github.com/hanisftryaa/tekweb2022/blob/main/HHH.drawio.png)
